@@ -22,5 +22,5 @@ Three example scripts are included: example_nn.py, example_nn_timeseries.py and 
 ![Example output](Figure_1.png?raw=true "Example output")
 
 # License
-Covered by the CreativeCommons license which allows for research and personal use only. See https://creativecommons.org/licenses/by-nc/4.0/
+Covered by the CreativeCommons license which allows for research and personal use only. For a commercial license contact the authors. See https://creativecommons.org/licenses/by-nc/4.0/
 
