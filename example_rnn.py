@@ -10,7 +10,7 @@ targets = ar_1(num_draws=200)
 # These arguments need to be identical when passed to two functions below
 num_networks = 200
 num_steps = 5
-method = ('simple_block', 5)
+method = 'train_bootstrap'
 features_lags = None
 targets_lags = {0: (1, 2)}
 
@@ -39,7 +39,7 @@ with tf.Session() as sess:
                             model_name='rnn', checkpoint_dir='checkpoint_rnn')
 
     # Train the network
-    network.train(num_train_steps=4000, viz_every=1000, quantile_train_steps=2000,
+    network.train(num_train_steps=10000, viz_every=1000, quantile_train_steps=2000,
                   quantile_viz_every=400)
 
     # Predict on new data - just the test dataset in this case as an example
